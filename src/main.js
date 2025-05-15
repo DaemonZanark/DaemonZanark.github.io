@@ -6,6 +6,7 @@ import { setupCounter } from './counter.js'
 
 let NAME = "Naïmoudine"
 
+
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
@@ -19,10 +20,9 @@ document.querySelector('#app').innerHTML = `
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      Click on the Vite logo to learn more
+      Click on the Vite logo to learn more <br>
+      Bienvenue dans mon portfolio, Je suis ${NAME}
     </p>
-    <p>Bienvenue dans mon portfolio</p>
-    <p>Je suis ${NAME}</p>
   </div>
 `
 
