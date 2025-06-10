@@ -4,8 +4,6 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
 
-let NAME = "Naïmoudine"
-
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -15,15 +13,15 @@ document.querySelector('#app').innerHTML = `
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
-    <h1>Hello Vite!</h1>
+    <h1>Bienvenue dans mon portfolio !</h1>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      Click on the Vite logo to learn more <br>
-      Bienvenue dans mon portfolio, Je suis ${NAME}
+      Cliquer sur les icones pour accéder à la doc 
     </p>
   </div>
 `
 
 setupCounter(document.querySelector('#counter'))
+
