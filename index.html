@@ -1,13 +1,216 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">DEV <span>PORTFOLIO</span></div>
+    <div class="nav-links">
+      <a href="#home">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#projet">Mes Projets</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Salut, je m'appelle <span>ALYM'HADJI Naïmoudine</span><br>Etudiant en BTS SIO</h1>
+      <p>Dans le but de ma poursuite d'étude j'aimerais devenir développeur logiciel.</p>
+      <a href="#contact" class="cta-button">Me Contacter</a>
+    </div>
+
+    <div class="profile-container">
+      <div class="profile-border"></div>
+      <div class="tech-icons">
+        <i class="tech-icon" style="top: 0; left:50%; transform: translateX(-50%);">⚛️</i>
+        <i class="tech-icon" style="top: 50%; right: 0; transform: translateY(-50%);">💻</i>
+        <i class="tech-icon" style="bottom: 0; left: 50%; transform: translateX(-50%);">🔌</i>
+        <i class="tech-icon" style="top: 50%; left: 0; transform: translateY(-50%);">🍪</i>
+      </div>
+      <img src="src/images/profile.jpg" alt="Image de profile" width="857" class="profile-pic">
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="section-title">À propos de moi</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Je suis un étudiant en informatique actuellement en BTS SIO-SLAM.</p>
+        <p>Au cours de mes études j'ai expérimentez pas mal de languages informatiques qui m'ont servis à la réalisation de divers tâches, projets.</p>
+        <p>En dehors de mes études j'effectue des projets personnelle pour ainsi étendre mon éventaille de compétence. Je participe aussi à des projets communautaire ce qui me permet d'agrandir mon réseau de contact.</p>
+      </div>
+
+      <div class="skills">
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>HTML/CSS</span>
+            <span>90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>JavaScript</span>
+            <span>60%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 60%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>PHP</span>
+            <span>57%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 50%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>Python</span>
+            <span>70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 70%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>C#</span>
+            <span>66%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 66%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>SQL</span>
+            <span>85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projet">
+    <h2 class="section-title">Mes Projets</h2>
+    <div class="projects-grid">
+
+      <!-- 1st card -->
+      <div class="project-card">
+        <img src="src/images/logo_aventure.jpg" alt="Project 1" height="100px" class="project-img">
+        <div class="project-info">
+          <h3 class="project-title">Adventure_project</h3>
+          <p class="project-description">C'est un projet scolaire de jeu vidéo type RPG</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML/CSS</span>
+            <span class="tech-tag">PHP</span>
+          </div>
+          <div class="project-links">
+
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd card -->
+      <div class="project-card">
+        <img src="src/images/SL-050620-30640-14.jpg" alt="Project 2" height="100px" class="project-img">
+        <div class="project-info">
+          <h3 class="project-title">Quizz_TP</h3>
+          <p class="project-description">Un quiz fait en C# avec une interface sous Windows Form avec une communication à une BDD</p>
+          <div class="project-tech">
+            <span class="tech-tag">Windows Form</span>
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">SQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DaemonZanark/QuizTP#" class="project-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd card -->
+      <div class="project-card">
+        <img src="src/images/icon.svg" alt="Project 3" height="200px" class="project-img">
+        <div class="project-info">
+          <h3 class="project-title">GameProject</h3>
+          <p class="project-description">Un projet de jeux vidéo, fait en C# et utilisant le moteur de jeux OpenSource Godot</p>
+          <div class="project-tech">
+            <span class="tech-tag">Godot Engine</span>
+            <span class="tech-tag">C#</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DaemonZanark/GameProject_Godot" class="project-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Me Contacter</h2>
+
+    <form class="contact-form">
+
+      <div class="form-group">
+        <label for="name" class="form-label">Nom</label>
+        <input type="text" id="name" class="form-input" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-input" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject" class="form-label">Sujet</label>
+        <input type="text" id="subject" class="form-input" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" class="form-textarea" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Envoyer </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p class="copyright">© 2023 D-Zanark. All rights reserved.</p>
+  </footer>
+
+
+
+  <script src="src/script.js"></script>
+</body>
 </html>
