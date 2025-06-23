@@ -90,7 +90,7 @@ nav {
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 690px;
     z-index: 2;
 }
 
@@ -175,7 +175,7 @@ nav {
 
 .profile-border {
     position: absolute;
-    width: 320px;
+    width: 433px;
     height: 320px;
     border-radius: 50%;
     border: 2px dashed var(--neon-green);
@@ -206,6 +206,13 @@ nav {
     font-size: 1.5rem;
     color: var(--neon-green);
     filter: drop-shadow(0 0 5px var(--neon-green));
+}
+.tech-tag {
+    background-color: #08f3;
+    color: var(--neon-blue);
+    padding: .3rem .8rem;
+    border-radius: 20px;
+    font-size: .8rem;
 }
 
 /* Animations */
@@ -390,31 +397,11 @@ nav {
     margin-bottom: 1rem;
 }
 
-.tech-tag {
-    background-color: rgba(0, 136, 255, 0.2);
-    color: var(--neon-blue);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-}
-
-.project-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.project-link {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    transition: color 0.3s ease;
-}
-
-.project-link:hover {
-    color: var(--neon-pink);
+.experiences {
+    padding: 5rem 5%;
+    position: relative;
+    background-color: var(--darker-bg);
+    border-bottom: 5px solid var(--neon-blue);
 }
 
 /* Contact Section */
