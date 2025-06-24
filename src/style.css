@@ -568,3 +568,10 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--neon-pink);
 }
+
+.comp-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
